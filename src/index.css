@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #F4B400;
+  --color-primary-hover: #E09A00;
+  --color-primary-light: #FFF8E1;
+  --color-secondary: #FFD54F;
+  --color-footer: #1F1A09;
+  --color-text: #1F2937;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: white;
+  color: var(--color-text);
+}
