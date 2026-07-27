@@ -21,10 +21,10 @@ const Button = ({
 }: ButtonProps) => {
   const variantClasses = {
     primary:
-      "bg-blue-600 text-white hover:bg-blue-700 shadow-lg hover:shadow-xl",
+      "bg-yellow-400 text-black hover:bg-yellow-500 shadow-lg hover:shadow-xl",
 
     secondary:
-      "bg-slate-900 text-white hover:bg-slate-800",
+      "bg-yellow-400 text-black hover:bg-slate-800",
 
     outline:
       "border border-slate-300 bg-white text-slate-900 hover:bg-slate-100",

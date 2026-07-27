@@ -43,110 +43,217 @@ interface ContactFormProps {
 
 };
 
-  return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      className="space-y-6"
-    >
-      <div>
-        <input
-          {...register("fullName")}
-          placeholder="Full Name"
-          className="w-full rounded-xl border p-4"
-        />
+return (
+  <form
+    onSubmit={handleSubmit(onSubmit)}
+    className="
+      rounded-3xl
+      border
+      border-zinc-800
+      bg-zinc-900
+      p-8
+      shadow-[0_20px_50px_rgba(0,0,0,0.4)]
+      space-y-6
+    "
+  >
+    {/* Full Name */}
 
-        {errors.fullName && (
-          <p className="mt-2 text-sm text-red-500">
-            {errors.fullName.message}
-          </p>
-        )}
-      </div>
+    <div>
+      <input
+        {...register("fullName")}
+        placeholder="Full Name"
+        className="
+          w-full
+          rounded-xl
+          border
+          border-zinc-700
+          bg-zinc-950
+          px-4
+          py-4
+          text-white
+          placeholder:text-zinc-500
+          outline-none
+          transition-all
+          duration-300
+          focus:border-yellow-400
+          focus:ring-2
+          focus:ring-yellow-400/20
+        "
+      />
 
-      <div>
-        <input
-          {...register("email")}
-          placeholder="Email Address"
-          className="w-full rounded-xl border p-4"
-        />
+      {errors.fullName && (
+        <p className="mt-2 text-sm text-red-400">
+          {errors.fullName.message}
+        </p>
+      )}
+    </div>
 
-        {errors.email && (
-          <p className="mt-2 text-sm text-red-500">
-            {errors.email.message}
-          </p>
-        )}
-      </div>
+    {/* Email */}
 
-      <div>
-        <input
-          {...register("phone")}
-          placeholder="Phone Number"
-          className="w-full rounded-xl border p-4"
-        />
+    <div>
+      <input
+        {...register("email")}
+        placeholder="Email Address"
+        className="
+          w-full
+          rounded-xl
+          border
+          border-zinc-700
+          bg-zinc-950
+          px-4
+          py-4
+          text-white
+          placeholder:text-zinc-500
+          outline-none
+          transition-all
+          duration-300
+          focus:border-yellow-400
+          focus:ring-2
+          focus:ring-yellow-400/20
+        "
+      />
 
-        {errors.phone && (
-          <p className="mt-2 text-sm text-red-500">
-            {errors.phone.message}
-          </p>
-        )}
-      </div>
+      {errors.email && (
+        <p className="mt-2 text-sm text-red-400">
+          {errors.email.message}
+        </p>
+      )}
+    </div>
 
-      <div>
-        <select
-          {...register("course")}
-          className="w-full rounded-xl border p-4"
-        >
-          <option value="">Select Course</option>
+    {/* Phone */}
 
-          <option value="Java Full Stack">
-            Java Full Stack
-          </option>
+    <div>
+      <input
+        {...register("phone")}
+        placeholder="Phone Number"
+        className="
+          w-full
+          rounded-xl
+          border
+          border-zinc-700
+          bg-zinc-950
+          px-4
+          py-4
+          text-white
+          placeholder:text-zinc-500
+          outline-none
+          transition-all
+          duration-300
+          focus:border-yellow-400
+          focus:ring-2
+          focus:ring-yellow-400/20
+        "
+      />
 
-          <option value="Cloud & DevOps">
-            Cloud & DevOps
-          </option>
+      {errors.phone && (
+        <p className="mt-2 text-sm text-red-400">
+          {errors.phone.message}
+        </p>
+      )}
+    </div>
 
-          <option value="AI & Machine Learning">
-            AI & Machine Learning
-          </option>
+    {/* Course */}
 
-          <option value="Data Analytics">
-            Data Analytics
-          </option>
-        </select>
-
-        {errors.course && (
-          <p className="mt-2 text-sm text-red-500">
-            {errors.course.message}
-          </p>
-        )}
-      </div>
-
-      <div>
-        <textarea
-          rows={5}
-          {...register("message")}
-          placeholder="Message"
-          className="w-full rounded-xl border p-4"
-        />
-
-        {errors.message && (
-          <p className="mt-2 text-sm text-red-500">
-            {errors.message.message}
-          </p>
-        )}
-      </div>
-
-      <Button
-        type="submit"
-        fullWidth
-        disabled={isSubmitting}
+    <div>
+      <select
+        {...register("course")}
+        className="
+          w-full
+          rounded-xl
+          border
+          border-zinc-700
+          bg-zinc-950
+          px-4
+          py-4
+          text-white
+          outline-none
+          transition-all
+          duration-300
+          focus:border-yellow-400
+          focus:ring-2
+          focus:ring-yellow-400/20
+        "
       >
-        {isSubmitting
-          ? "Submitting..."
-          : "Submit Enquiry"}
-      </Button>
-    </form>
-  );
+        <option value="">Select Course</option>
+
+        <option value="Java Full Stack">
+          Java Full Stack
+        </option>
+
+        <option value="Cloud & DevOps">
+          Cloud & DevOps
+        </option>
+
+        <option value="AI & Machine Learning">
+          AI & Machine Learning
+        </option>
+
+        <option value="Data Analytics">
+          Data Analytics
+        </option>
+      </select>
+
+      {errors.course && (
+        <p className="mt-2 text-sm text-red-400">
+          {errors.course.message}
+        </p>
+      )}
+    </div>
+
+    {/* Message */}
+
+    <div>
+      <textarea
+        rows={5}
+        {...register("message")}
+        placeholder="Tell us how we can help you..."
+        className="
+          w-full
+          rounded-xl
+          border
+          border-zinc-700
+          bg-zinc-950
+          px-4
+          py-4
+          text-white
+          placeholder:text-zinc-500
+          outline-none
+          resize-none
+          transition-all
+          duration-300
+          focus:border-yellow-400
+          focus:ring-2
+          focus:ring-yellow-400/20
+        "
+      />
+
+      {errors.message && (
+        <p className="mt-2 text-sm text-red-400">
+          {errors.message.message}
+        </p>
+      )}
+    </div>
+
+    <Button
+      type="submit"
+      fullWidth
+      disabled={isSubmitting}
+      className="
+        rounded-xl
+        bg-yellow-400
+        py-4
+        font-semibold
+        text-black
+        transition-all
+        duration-300
+        hover:bg-yellow-300
+        hover:shadow-[0_10px_30px_rgba(250,204,21,0.25)]
+      "
+    >
+      {isSubmitting ? "Submitting..." : "Submit Enquiry"}
+    </Button>
+  </form>
+);
 };
 
 export default ContactForm;

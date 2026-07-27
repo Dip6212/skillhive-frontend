@@ -40,7 +40,7 @@ const filteredCourses = useMemo(() => {
 
   return (
     <SectionReveal>
-      <section className="bg-slate-50 py-24">
+      <section  className="relative overflow-hidden bg-gradient-to-br from-black via-zinc-950 to-black py-24 lg:py-32">
         <Container>
 
           <SectionHeading
@@ -58,7 +58,7 @@ const filteredCourses = useMemo(() => {
                 onClick={() => setSelectedPackage(tab)}
                 className={`rounded-full px-8 py-3 font-semibold transition-all duration-300 ${
                   selectedPackage === tab
-                    ? "bg-blue-600 text-white shadow-lg"
+                    ? "bg-yellow-600 text-white shadow-lg"
                     : "border border-slate-200 bg-white hover:bg-slate-100"
                 }`}
               >

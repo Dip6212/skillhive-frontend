@@ -18,7 +18,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <header className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? "bg-white shadow-md" : "bg-white"}`}>
+        <header className={`sticky  top-0 z-50 transition-all duration-300 ${scrolled ? "bg-black shadow-md" : "bg-black"}`}>
 
             <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
                 <Logo />
@@ -29,13 +29,13 @@ const Navbar = () => {
                 <div className="hidden items-center gap-4 lg:flex">
 
                     <button
-                        className="rounded-lg border border-slate-300 px-5 py-2 text-sm font-medium hover:bg-slate-100 transition"
+                        className="rounded-lg border border-slate-300 px-5 py-2 text-yellow-400 text-sm font-medium hover:bg-slate-100 transition"
                     >
                         Login
                     </button>
 
                     <button
-                        className="rounded-lg bg-blue-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
+                        className="rounded-lg bg-yellow-600 px-5 py-2 text-sm font-semibold text-black transition hover:bg-yellow-400"
                     >
                         Get Started
                     </button>

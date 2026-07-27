@@ -1,28 +1,52 @@
 import Container from "../../ui/Container/Container";
 import ContactForm from "./ContactForm";
 
-
 const ContactFormSection = () => {
   return (
-    <section className="bg-slate-50 py-24">
+    <section className="bg-[#050505] py-24">
       <Container>
+        <div
+          className="
+            mx-auto
+            max-w-3xl
+            rounded-3xl
+            border
+            border-zinc-800
+            bg-zinc-900
+            p-10
+            shadow-[0_25px_60px_rgba(0,0,0,0.45)]
+          "
+        >
+          <span
+            className="
+              inline-block
+              rounded-full
+              border
+              border-yellow-400/20
+              bg-yellow-400/10
+              px-4
+              py-2
+              text-sm
+              font-semibold
+              text-yellow-400
+            "
+          >
+            Free Career Guidance
+          </span>
 
-        <div className="mx-auto max-w-3xl rounded-3xl bg-white p-10 shadow-lg">
-
-          <h2 className="text-3xl font-bold">
-            Book Free Counselling
+          <h2 className="mt-6 text-4xl font-bold text-white">
+            Book a Free Counselling Session
           </h2>
 
-          <p className="mt-3 text-slate-600">
-            Fill in your details and our team will contact you shortly.
+          <p className="mt-4 leading-8 text-zinc-400">
+            Fill in your details and our career experts will contact you shortly
+            to help you choose the right course and career path.
           </p>
 
           <div className="mt-10">
             <ContactForm />
           </div>
-
         </div>
-
       </Container>
     </section>
   );

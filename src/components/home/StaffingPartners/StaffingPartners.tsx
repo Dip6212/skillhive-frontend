@@ -6,8 +6,8 @@ import InfiniteSlider from "./InfiniteSlider";
 const StaffingPartners = () => {
   return (
     <SectionReveal>
-    <section className="bg-white py-24">
-
+    <section  className="relative overflow-hidden bg-gradient-to-br from-black via-zinc-950 to-black py-24 lg:py-32">
+    
       <Container>
 
         <SectionHeading

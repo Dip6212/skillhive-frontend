@@ -15,7 +15,7 @@ const PartnerLogo = ({ logo, name }: Props) => {
       items-center
       justify-center
       rounded-2xl
-      bg-white
+      bg-black
       border
       border-slate-200
       shadow-sm
@@ -27,7 +27,7 @@ const PartnerLogo = ({ logo, name }: Props) => {
       <img
         src={logo}
         alt={name}
-        className="max-h-10 object-contain"
+        className="h-auto w-100% object-contain"
       />
     </div>
   );

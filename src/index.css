@@ -19,6 +19,6 @@ body,
 body {
   margin: 0;
   font-family: Inter, sans-serif;
-  background: white;
+  background: black;
   color: var(--color-text);
 }

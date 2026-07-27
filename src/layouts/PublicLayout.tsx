@@ -17,7 +17,7 @@ const PublicLayout = () => {
 
             </main>
 
-            <footer className="border-t pt-10 text-center">
+            <footer className=" pt-10 text-center">
 
                 <Footer/>
 

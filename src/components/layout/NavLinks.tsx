@@ -9,7 +9,7 @@ const NavLinks = () => {
             {navLinks.map((item) => (
                 <NavLink to={item.path} key={item.path}
                     className={({ isActive }) => `font-medium transition-colors 
-                    ${isActive ? "text-blue-600" : "text-slate-600 hover:text-blue-600"}`}
+                    ${isActive ? "text-yellow-600" : "text-white hover:text-yellow-600"}`}
                 >
                     {item.label}
                 </NavLink>
