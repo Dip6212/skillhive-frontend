@@ -19,7 +19,7 @@ export interface UniversityProgram {
       fees: "₹1,75,000",
       image: "/images/courses/mba.png",
       detailsUrl:
-        "https://tutopiapro.com/university-course-details/online-mba-muj",
+        "/",
     },
   
     {
@@ -31,7 +31,7 @@ export interface UniversityProgram {
       fees: "₹1,58,000",
       image: "/images/courses/mca.png",
       detailsUrl:
-        "https://tutopiapro.com/university-course-details/online-mca-muj",
+        "/",
     },
   
     {
@@ -43,7 +43,7 @@ export interface UniversityProgram {
       fees: "₹1,35,000",
       image: "/images/courses/bba.png",
       detailsUrl:
-        "https://tutopiapro.com/university-course-details/online-bba-muj",
+        "/",
     },
   
     {
@@ -55,7 +55,7 @@ export interface UniversityProgram {
       fees: "₹1,35,000",
       image: "/images/courses/bca.png",
       detailsUrl:
-        "https://tutopiapro.com/university-course-details/online-bca-muj",
+        "/",
     },
   
     {
@@ -67,7 +67,7 @@ export interface UniversityProgram {
       fees: "₹98,000",
       image: "/images/courses/mca.png",
       detailsUrl:
-        "https://tutopiapro.com/university-course-details/online-mca-smu",
+        "/",
     },
   
     {
@@ -79,7 +79,7 @@ export interface UniversityProgram {
       fees: "₹1,10,000",
       image: "/images/courses/mba.png",
       detailsUrl:
-        "https://tutopiapro.com/university-course-details/online-mba-smu",
+        "/",
     },
   
     // {
