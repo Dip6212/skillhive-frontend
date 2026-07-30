@@ -57,7 +57,7 @@ const Hero = () => {
   return (
     <SectionReveal>
       <section
-        className="relative overflow-hidden bg-gradient-to-br from-black via-zinc-950 to-black py-24 lg:py-32"
+        className="relative overflow-hidden bg-gradient-to-br from-black via-zinc-950 to-black py-24 lg:py-20"
         style={
           hero.backgroundImage?.fileUrl
             ? {

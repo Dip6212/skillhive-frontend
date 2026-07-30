@@ -10,6 +10,7 @@ import PlacementAssistance from "@/components/home/PlacementAssistance/Placement
 import Testimonials from "@/components/home/Testimonials/Testimonials";
 import FAQ from "@/components/home/FAQ/FAQ";
 import ContactCTA from "@/components/home/ContactCTA/ContactCTA";
+import UniversityPrograms from "@/components/university/UniversityPrograms";
 
 const HomePage = () => {
   const {
@@ -23,6 +24,8 @@ const HomePage = () => {
       <Hero />
 
       <StaffingPartners />
+
+      <UniversityPrograms/>
 
       <CareerPrograms />
 
