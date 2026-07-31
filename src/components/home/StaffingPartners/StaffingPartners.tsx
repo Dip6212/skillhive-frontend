@@ -11,7 +11,7 @@ const StaffingPartners = () => {
       <Container>
 
         <SectionHeading
-          title="Trusted Staffing Partners"
+          title="Hiring Partners for Degree Courses"
           subtitle="Our learners get opportunities with startups, MNCs and product companies."
         />
 

@@ -19,7 +19,7 @@ const UniversityPrograms = () => {
         <Container>
 
           <SectionHeading
-            title="University Online Programs"
+            title="Our University Courses"
             subtitle="Earn UGC-approved online degrees from India's leading universities and advance your career with flexible, industry-relevant education."
           />
 

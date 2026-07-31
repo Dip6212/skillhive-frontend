@@ -23,9 +23,9 @@ const HomePage = () => {
     <>
       <Hero />
 
-      <StaffingPartners />
-
       <UniversityPrograms/>
+
+      <StaffingPartners />
 
       <CareerPrograms />
 
