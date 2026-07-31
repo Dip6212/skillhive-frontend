@@ -8,12 +8,12 @@ import {
   export const contactInfo = [
     {
       title: "Call Us",
-      value: "+91 9876543210",
+      value: "+91 8282840543",
       icon: Phone,
     },
     {
       title: "Email",
-      value: "info@tutopia.com",
+      value: "skillhive.edu@outlook.com",
       icon: Mail,
     },
     {

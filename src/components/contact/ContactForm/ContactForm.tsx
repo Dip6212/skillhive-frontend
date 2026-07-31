@@ -174,22 +174,22 @@ return (
           focus:ring-yellow-400/20
         "
       >
-        <option value="">Select Course</option>
+        <option value="">Select Occupation</option>
 
-        <option value="Java Full Stack">
-          Java Full Stack
+        <option value="Job">
+          Job 
         </option>
 
-        <option value="Cloud & DevOps">
-          Cloud & DevOps
+        <option value="Student">
+          Student
         </option>
 
-        <option value="AI & Machine Learning">
-          AI & Machine Learning
+        <option value="Teacher">
+        Teacher
         </option>
 
-        <option value="Data Analytics">
-          Data Analytics
+        <option value="Other">
+        Other
         </option>
       </select>
 
